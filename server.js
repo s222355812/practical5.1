@@ -82,6 +82,10 @@ app.use('/api/projects',projectRoutes)
 //         desciption: "Search best destinations for Day Trip"
 //     }
 //   ]
+app.get('/addNumber/:n1/:n2', function(request,response){
+    //response.statusCode(500);
+    response.json({statusCode:200});
+})
 
 const port = process.env.port || 3000;
 
